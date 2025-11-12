@@ -1,0 +1,10 @@
+package Selenium_class;
+
+public class AutomationTestingPractice_Browser_launch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

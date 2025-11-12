@@ -1,0 +1,25 @@
+package Selenium_class;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class DemoNopCommerce_Browser_launch {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriverManager.chromedriver().setup();  
+        ChromeDriver driver = new ChromeDriver();
+        driver.get("https://demo.nopcommerce.com/login?returnUrl=%2F");
+        Thread.sleep(3000);
+        driver.manage().window().maximize();
+        driver.findElement(By.className("email")).sendKeys("Shashi");
+        driver.findElement(By.id("Password")).sendKeys("password");
+        driver.findElement(By.className("button-1")).click();   /// Doubt --> only before space will work
+         
+        
+        
+
+	}
+
+}

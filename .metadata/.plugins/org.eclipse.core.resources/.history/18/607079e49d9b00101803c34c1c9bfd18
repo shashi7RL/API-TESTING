@@ -1,0 +1,76 @@
+package Selenium_class;
+import java.util.*;
+
+import org.apache.commons.lang3.StringUtils;
+import org.openqa.selenium.support.ui.Select;
+
+
+
+public class Programms {
+
+	public static void main(String[] args) {
+		
+// Find out the char occurs 		
+		
+		  String name ="sasi kumar sk deva sasi"; 
+		  String [] name2= name.split(" ");
+		  
+		  for (String x:name2) { 
+		   int count =0; 
+		   
+		   for(char ch:x.toLowerCase().toCharArray()){
+			   if ("c".indexOf(ch)!=-1) { 
+				   count++;
+		  
+		 }
+			   }
+		  
+		 System.out.println(x+"-"+count); }
+		 
+	//----------------------------------------------------------------------------
+		
+	 System.out.print("----------------------------------");
+	 
+	
+	 
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

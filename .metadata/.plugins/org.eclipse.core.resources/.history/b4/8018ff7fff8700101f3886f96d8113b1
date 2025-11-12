@@ -1,0 +1,24 @@
+package com.example;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LaunchBrowser {
+    public static void main(String[] args) {
+        // Set path for ChromeDriver
+    	System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
+        
+        // Launch Chrome
+        WebDriver driver = new ChromeDriver();
+        
+        // Open a website
+        driver.get("https://www.google.com");
+        
+        // Print title
+        System.out.println("Title: " + driver.getTitle());
+        
+        // Close browser
+        driver.quit();
+    }
+}
+
